@@ -16,7 +16,7 @@
 <br>
 
 <p align="center">
-  <img src="./Images/image.png" width="70%" height="60%" />
+  <img src="./Images/cloud.png" width="70%" height="60%" />
 </p>
 
 
