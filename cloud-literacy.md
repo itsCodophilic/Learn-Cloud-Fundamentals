@@ -60,3 +60,79 @@
 - Cloud providers have policies, technologies and controls which provide a very high level of security to protect data, applications and the overall infrastructure from threats.
 
 ![alt text](image-6.png)
+
+# Service Models
+
+- There are two main ways to run applications:
+
+## On-Premises
+
+- On-Premises (On-Prem) means all IT infrastructure (servers, storage, networking) is physically located inside your own office/building and managed by you.
+    - You buy everything.
+    - You maintain everything.
+    - You are responsible for everything.
+- On-Premises means hosting and managing IT infrastructure inside your own physical location instead of using cloud services.
+- Key Aspects of On-Premises:
+    - **Ownership & Responsibility**: The organization purchases, owns, and maintains all hardware and software.
+    - **Location**: The infrastructure is located in-house or in a rented local facility, not in a vendor's remote data center.
+    - **Maintenance**: Internal IT staff is responsible for updates, security patches, and repairs.
+    - **Security & Control**: Offers higher control over data, which is ideal for compliance, security, and specific performance needs
+
+
+## Cloud
+
+- Cloud Service Models define what level of service the cloud provider gives you. Think of it like, the more responsibility the provider takes, the less you manage.
+- You use internet-based services. Inside cloud, you decide how much control you want. If you choose Cloud, then inside cloud you choose:
+    - IaaS (Infrastructure as a Service) → If You Want Full Control
+    - PaaS (Platform as a Service) → If You Just Want to Deploy Code
+    - SaaS (Software as a Service) → If You Just Want to Use Software
+
+
+![alt text](image-7.png)
+
+- A Simple Analogy:
+
+Imagine opening a restaurant:
+
+- On-Prem → Build building, buy kitchen equipment, hire maintenance.
+- IaaS → Rent empty kitchen space, set up your tools.
+- PaaS → Rent fully equipped kitchen, just cook.
+- SaaS → Order food from Swiggy — just eat.
+- Let's look more in detail about Iaas, Paas and Saas
+
+### Iaas (Infrastructure as a Service)
+
+![alt text](image-8.png)
+
+
+- Infrastructure as a service is the most basic category of cloud computing services and relates to the IT infrastructure. You rent virtualized hardware like servers, storage, and networking, but you are responsible for everything on top of it.
+- You Manage → Operating systems, middleware, runtime, data, and applications.
+- Provider Manages → Physical servers, networking, virtualization, and storage.
+- Through IaaS, an organisation can re-create their IT infrastructure by defining networks in the cloud, having application servers that run inside those networks, and installing and configuring application software on those servers.
+- Effectively this is what an organisation would do in their own data centers (On-prem) but instead, they do it in the cloud provider’s data centers. That means the provider takes care of hardware provision but the organisation still has a large degree of control over exactly what software’s running in the cloud.
+- Example: AWS EC2 instance. You launch a VM. You install OS, Database and application in it. Cloud provider only gives hardware. Cloud providers like Amazon Web Services, Microsoft Azure, and Google Compute Engine.
+
+### PaaS (Platform as a Service)
+
+![alt text](image-9.png)
+
+- Imagine your organisation needs a database server to capture data from your customer service system. You could use IaaS to create a server and install database management software on it. But you could also leave this to the cloud provider who can provide and configure the resources behind the scenes and give you secure access to those resources.
+- PaaS is designed for developers. It provides a pre-configured environment (the "platform") where you can write and deploy code without worrying about managing servers or operating systems.
+- You Manage → Only your applications and the data within them.
+- Provider Manages → Operating systems, runtime, middleware, and all underlying infrastructure.
+- Platform as a service is the model that provides an on-demand environment for developing, testing, delivering and managing software applications using provider-managed building blocks.
+- However, whilst this approach means having slightly less control over the configuration of the services, it also means the organisation has less responsibility for the infrastructure that’s running them, freeing them up to focus on adding new features and services rather than maintaining the technical infrastructure.
+- Examples:
+    - Heroku: A popular platform where a developer can deploy a Node.js or Python application directly from GitHub in minutes without configuring virtual machines.
+    - Microsoft Azure App Service: Ideal for developers to host web apps, RESTful APIs, and mobile backends quickly.
+
+### SaaS (Software as a Service)
+
+![alt text](image-10.png)
+
+- SaaS is a finished software product delivered over the internet, typically via a web browser. It is ready-to-use and requires zero technical management from your end. You use a complete software application via internet. You manage nothing Everything is handled by provider.
+- Software as a service is the model for delivering software applications on-demand over the Internet, typically on a subscription basis. With SaaS, cloud providers host and manage the software application and underlying infrastructure, and handle any maintenance, like software upgrades and security patching. Users connect to the application over the Internet, usually with a web browser on their phone, tablet or PC.
+- Examples:  Microsoft Office 365, Google Apps, Gmail etc.
+
+>[!NOTE] 
+> - Most companies may use Cloud or keep On-Prem or a Hybrid Setup. A hybrid cloud setup combines on-premises infrastructure (private cloud/servers) with public cloud services (AWS, Azure, Google Cloud), allowing data and applications to be shared between them
