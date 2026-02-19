@@ -3,4 +3,4 @@
 - Learn about cloud [fundamentals](./cloud-literacy.md)
 
 
-![alt text](image.png)
+![alt text](./Images/image.png)
