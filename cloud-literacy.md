@@ -161,12 +161,12 @@ Imagine opening a restaurant:
 
 ![alt text](image-11.png)
 
-## Public vs Private vs Hybrid Cloud
+## Public vs Private vs Hybrid vs Community Cloud
 
 ### Public Cloud
 
 - Public cloud resources are owned by a cloud provider and shared across multiple customers. The physical hardware is shared. But each customer’s data and applications are logically isolated (separated securely). Customers cannot see each other’s data.
-- It is a cloud computing environment where third-party providers offer services to multiple customers over the public or shared Internet. 
+- It is a cloud computing environment where third-party providers offer services to multiple customers over the public or shared Internet.
 - In this model, the cloud provider owns and operates the infrastructure (data centers, servers, networks, etc.) and delivers these resources as a fully managed service to multiple users referred to as tenants. This means many tenants share the same hardware resources, while their data and workloads remain logically isolated. Public cloud services are typically delivered on a pay-as-you-go or subscription model, allowing users to scale usage up or down easily.
 - Examples of Public Cloud: Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP)
 
@@ -201,10 +201,26 @@ Imagine opening a restaurant:
 > - Private Cloud does NOT automatically mean On-Prem. On-Prem = You own and manage everything physically.
 > - Private Cloud = Dedicated cloud environment for one company (can be on-prem or hosted).
 
+
+### Community Cloud
+
+- A Community Cloud is a cloud infrastructure shared by multiple organizations that have similar requirements, policies, or goals.
+- A community cloud is a collaborative, multi-tenant infrastructure shared among several organizations with common goals, such as security, compliance, or industry-specific needs. It provides a middle ground between private and public clouds, offering enhanced security and shared costs for sectors like government, healthcare, or finance.
+- It is not open to everyone like Public Cloud.
+- It is not dedicated to only one organization like Private Cloud. It is shared — but only within a specific group (community).
+- Example: Several government departments Or multiple hospitals Or a group of banks They all:
+    - Must follow strict compliance rules
+    - Need secure infrastructure
+    - Want cost sharing
+- So they create a cloud environment only accessible to that group. That is Community Cloud.
+- Cost-effective compared to private clouds, more secure than public clouds, and highly scalable.
+
+
+
 ### Hybrid Cloud
 
 - Many organizations use a Hybrid Cloud, which combines both public and private clouds. This allows sensitive data to be kept in a secure private environment while non-critical tasks leverage the cost-effective scalability of the public cloud
-
+- The hybrid cloud deployment model occurs when an organization uses two or more deployment models: private cloud, public cloud, or community cloud.
 
 >[!NOTE]
 > - Most companies may use Cloud or keep On-Prem or a Hybrid Setup. A hybrid cloud setup combines on-premises infrastructure (private cloud/servers) with public cloud services (AWS, Azure, Google Cloud), allowing data and applications to be shared between them.
@@ -212,20 +228,21 @@ Imagine opening a restaurant:
 
 
 
-| Aspect                       | Public Cloud                                        | Private Cloud                                   | Hybrid Cloud                                    |
-| ---------------------------- | --------------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- |
-| **Resource Ownership**       | Owned by cloud provider                             | Dedicated to one organization                   | Mix of public + private                         |
-| **Resource Sharing**         | Shared physical infrastructure (logically isolated) | Not shared with other organizations             | Some shared, some dedicated                     |
-| **Security Control**         | Standard security provided by provider              | High control over security policies             | Flexible — sensitive workloads can stay private |
-| **Maintenance**              | Managed mostly by provider                          | Managed by organization (or dedicated provider) | Mixed responsibility                            |
-| **Cost / Pricing**           | Pay-as-you-use, lower upfront cost                  | Higher cost (dedicated resources)               | Moderate — optimized cost strategy              |
-| **Scalability**              | Highly scalable, on-demand                          | Limited by owned capacity                       | Scalable using public part                      |
-| **Control Level**            | Less infrastructure control                         | Full control over infrastructure                | Balanced control                                |
-| **Customization**            | Limited customization                               | Highly customizable                             | Moderate customization                          |
-| **Compliance & Regulations** | May be challenging for strict regulations           | Easier to meet strict compliance needs          | Sensitive data can stay private                 |
-| **Business Suitability**     | Startups, web apps, fast-growing businesses         | Large enterprises, banks, healthcare            | Enterprises needing flexibility + compliance    |
-| **Deployment Speed**         | Very fast                                           | Slower setup                                    | Medium                                          |
-| **Risk Handling**            | Dependent on provider’s uptime                      | Organization responsible                        | Can distribute risk                             |
+| Aspect                       | Public Cloud                                        | Private Cloud                                   | Hybrid Cloud                                    | Community Cloud                                               |
+| ---------------------------- | --------------------------------------------------- | ----------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------- |
+| **Resource Ownership**       | Owned by cloud provider                             | Dedicated to one organization                   | Mix of public + private                         | Shared by multiple organizations with common requirements     |
+| **Resource Sharing**         | Shared physical infrastructure (logically isolated) | Not shared with other organizations             | Some shared, some dedicated                     | Shared only within a specific group of organizations          |
+| **Security Control**         | Standard security provided by provider              | High control over security policies             | Flexible — sensitive workloads can stay private | Strong security tailored to community standards               |
+| **Maintenance**              | Managed mostly by provider                          | Managed by organization (or dedicated provider) | Mixed responsibility                            | Shared responsibility or managed by third-party provider      |
+| **Cost / Pricing**           | Pay-as-you-use, lower upfront cost                  | Higher cost (dedicated resources)               | Moderate — optimized cost strategy              | Cost shared among participating organizations                 |
+| **Scalability**              | Highly scalable, on-demand                          | Limited by owned capacity                       | Scalable using public part                      | Moderate scalability depending on shared infrastructure       |
+| **Control Level**            | Less infrastructure control                         | Full control over infrastructure                | Balanced control                                | More control than public, less than fully private             |
+| **Customization**            | Limited customization                               | Highly customizable                             | Moderate customization                          | Customizable based on shared policies                         |
+| **Compliance & Regulations** | May be challenging for strict regulations           | Easier to meet strict compliance needs          | Sensitive data can stay private                 | Designed to meet shared compliance or regulatory requirements |
+| **Business Suitability**     | Startups, web apps, fast-growing businesses         | Large enterprises, banks, healthcare            | Enterprises needing flexibility + compliance    | Government bodies, healthcare groups, financial consortiums   |
+| **Deployment Speed**         | Very fast                                           | Slower setup                                    | Medium                                          | Moderate — depends on shared governance                       |
+| **Risk Handling**            | Dependent on provider’s uptime                      | Organization responsible                        | Can distribute risk                             | Risk shared across participating organizations                |
+
 
 # Service vs Deployment Model
 
