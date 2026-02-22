@@ -2,11 +2,11 @@
 
 - Whether we know it or not, we are almost likely using the cloud in one way or another. Every time you open your Gmail account, watch a show on Netflix, or check your Instagram, you are using the cloud.
 
-![alt text](image.png)
+![alt text](./Images/literacy/image.png)
 
 - Before the cloud existed, you might have saved files, pictures, and videos to your hard drive, and used a computer-based application to read your emails.
 
-![alt text](image-1.png)
+![alt text](./Images/literacy/image-1.png)
 
 
 - Okay, so what exactly is the cloud? **Cloud is just someone else’s computer that you use through the internet. Instead of buying your own server or computer to store data or run applications, you rent computing power, storage, and services from a company over the internet.**
@@ -18,13 +18,13 @@
 - A Server is a powerful computer that stores data, runs applications and responds to requests from users. It is a physical machine. E.g your Computer is a physical machine.
 - A Virtual Machine (VM) is a software-based computer running inside a physical server. It behaves like its own computer with its own OS, own memory, own CPU, own Storage. But physically, it’s sharing resources of one real server. One physical machine can host many Virtual Machines (VM's)
 
-![alt text](image-2.png)
+![alt text](./Images/literacy/image-2.png)
 
 
 - A data centers contains many servers, each servers may have many VM's. Virtual Machines act like independent computers.
 - If an individual server goes down in data center, this generally doesn't affect the performance of the cloud server, making the system very reliable. Users can connect to the cloud from any device over the internet and can access files and services either through an app or through their browser.
 
-![alt text](image-3.png)
+![alt text](./Images/literacy/image-3.png)
 
 - Cloud computing relies on a technology called virtualization where digital-only virtual computers operate independently inside a physical computer. The technical term is a virtual machine. The beauty of virtual machines is that they are very lightweight, so one physical machine can host many virtual machines.
 - Let's look at an example. Say you lose your mobile or it breaks. On it, you have all of your emails, Instagram and Facebook posts and all of your photos. If you weren't using cloud technology, all of this data would be lost along with the phone. But with cloud computing, you know that when you open your accounts on a new or different device, it will still all be in place, with all of your photos, videos, and conversation history saved.
@@ -34,7 +34,7 @@
 
 ### Availability zone (AZ)
 
-![alt text](image-13.png)
+![alt text](./Images/literacy/image-13.png)
 
 - An availability zone (AZ) is a physically and logically isolated, highly available data center or group of data centers within a cloud provider's region. Each zone has independent, redundant power, cooling, and network connectivity. 
 - They are designed to protect against localized disasters and failures.
@@ -55,7 +55,7 @@
 
 - The phrase, the cloud, was first used as slang. When the internet was in its early stages, technical diagrams often used a cloud symbol to represent the servers and networking infrastructure that made up the internet.
 
-![alt text](image-4.png)
+![alt text](./Images/literacy/image-4.png)
 
 - When computing processes began moving to the servers and infrastructure part of the internet, people used the phrase, moving to the cloud, as a way of describing the process. The term stuck, and nowadays the cloud is the term we use to describe this type of computing.
 
@@ -64,7 +64,7 @@
 - **Cloud computing is using computing services (like servers, storage, databases, software, analytics and artificial intelligence) over the internet instead of using your own computer or hardware. Instead of buying and managing physical machines, you rent computing power from a cloud provider and access it via the internet.**
 - You’re probably using cloud computing right now, even if you don’t realise it. If you use an online service to send emails, edit documents, watch films or TV, listen to music, play games, or store pictures, it’s likely that cloud computing is making it possible.
 
-![alt text](image-5.png)
+![alt text](./Images/literacy/image-5.png)
 
 
 - The basis of cloud computing is a very large data center that’s full of identical hardware which runs computer services and stores data for multiple user organisations. Generally, services in the data center are easily scalable and the processes for management, deployment and updates are automated.
@@ -78,7 +78,7 @@
 - Data back-up, disaster recovery and business continuity planning is easier and less expensive.
 - Cloud providers have policies, technologies and controls which provide a very high level of security to protect data, applications and the overall infrastructure from threats.
 
-![alt text](image-6.png)
+![alt text](./Images/literacy/image-6.png)
 
 # Service Models
 
@@ -107,7 +107,7 @@
     - SaaS (Software as a Service) → If You Just Want to Use Software
 
 
-![alt text](image-7.png)
+![alt text](./Images/literacy/image-7.png)
 
 - A Simple Analogy:
 
@@ -121,7 +121,7 @@ Imagine opening a restaurant:
 
 ### Iaas (Infrastructure as a Service)
 
-![alt text](image-8.png)
+![alt text](./Images/literacy/image-8.png)
 
 
 - Infrastructure as a service is the most basic category of cloud computing services and relates to the IT infrastructure. You rent virtualized hardware like servers, storage, and networking, but you are responsible for everything on top of it.
@@ -133,7 +133,7 @@ Imagine opening a restaurant:
 
 ### PaaS (Platform as a Service)
 
-![alt text](image-9.png)
+![alt text](./Images/literacy/image-9.png)
 
 - Imagine your organisation needs a database server to capture data from your customer service system. You could use IaaS to create a server and install database management software on it. But you could also leave this to the cloud provider who can provide and configure the resources behind the scenes and give you secure access to those resources.
 - PaaS is designed for developers. It provides a pre-configured environment (the "platform") where you can write and deploy code without worrying about managing servers or operating systems.
@@ -147,7 +147,7 @@ Imagine opening a restaurant:
 
 ### SaaS (Software as a Service)
 
-![alt text](image-10.png)
+![alt text](./Images/literacy/image-10.png)
 
 - SaaS is a finished software product delivered over the internet, typically via a web browser. It is ready-to-use and requires zero technical management from your end. You use a complete software application via internet. You manage nothing Everything is handled by provider.
 - Software as a service is the model for delivering software applications on-demand over the Internet, typically on a subscription basis. With SaaS, cloud providers host and manage the software application and underlying infrastructure, and handle any maintenance, like software upgrades and security patching. Users connect to the application over the Internet, usually with a web browser on their phone, tablet or PC.
@@ -159,7 +159,7 @@ Imagine opening a restaurant:
 
 # Deployment Models
 
-![alt text](image-11.png)
+![alt text](./Images/literacy/image-11.png)
 
 ## Public vs Private vs Hybrid vs Community Cloud
 
@@ -259,11 +259,11 @@ Imagine opening a restaurant:
     - Hybrid + PaaS
 - They combine depending on business need.
 
-![alt text](image-12.png)
+![alt text](./Images/literacy/image-12.png)
 
 ## Benefits of Cloud Services
 
-![alt text](image-14.png)
+![alt text](./Images/literacy/image-14.png)
 
 - Let’s see how cloud services can benefit an organization:
 
@@ -316,7 +316,7 @@ Imagine opening a restaurant:
 - Virtualization is a technology that allows one physical computer (server) to run multiple independent virtual computers at the same time. Instead of using one server for only one operating system, virtualization divides the physical server’s resources — such as CPU, memory, and storage — into multiple isolated environments. 
 - Each environment behaves like a separate computer even though they all share the same physical hardware. This improves resource utilization, reduces cost, and increases flexibility. Virtualization is the key technology that makes cloud computing possible.
 
-![alt text](image-15.png)
+![alt text](./Images/literacy/image-15.png)
 
 - A physical machine is a computer, like this Windows machine. It has a CPU, memory, a hard drive and a network connection. It could also be a laptop, tablet or other device. In the context of virtualization, the **`physical computer is called a host`**.
 
@@ -331,7 +331,7 @@ Imagine opening a restaurant:
     - Type 2 (**Hosted hypervisor**): Installed on top of an existing operating system, usually used for personal or testing environments.
 
 
-![alt text](image-16.png)
+![alt text](./Images/literacy/image-16.png)
 
 
 
@@ -396,7 +396,7 @@ Imagine opening a restaurant:
 
 ## CapEx vs OpEx
 
-![alt text](image-17.png)
+![alt text](./Images/literacy/image-17.png)
 
 - **CapEx (Capital Expenditure)** involves large upfront investments in physical IT infrastructure, while **OpEx (Operating Expenditure)** represents recurring, pay-as-you-go costs for cloud services. 
 - In CapEx, when a company runs its own data center, it must buy servers, buy storage, buy networking equipment, buy software licenses etc. These are big upfront purchases.
@@ -429,39 +429,26 @@ Imagine opening a restaurant:
 
 
 
+- There are also very few up-front costs in the cloud, although some providers allow pre-payment for some of their services. This means an organisation commits to consuming an agreed number of resources which they pay for regardless of whether they use them or not, generally at a discounted rate. This is still counted as operational expenditure. 
+
+
+>[!IMPORTANT]
+> - In the cloud, when you launch a virtual machine, storage volume, database, or any other service, billing usually starts immediately and continues until you stop or delete it. The cloud provider does not automatically know whether you are actively using that server or not — it only knows that it is allocated to you, so it keeps charging for it.
+> - Because cloud platforms make it very easy to create new resources with just a few clicks, employees often spin up servers for testing, development, or temporary tasks and then forget to shut them down afterward. Over time, these unused or underutilized resources continue running in the background and generate costs every hour or every month. As a result, when the monthly bill arrives, organizations realize they are paying for resources that are not providing any real value. 
+> - This is why cost control and proper resource management are major challenges in cloud environments — companies must regularly monitor, optimize, and deactivate unnecessary resources to avoid overspending.
+
+
 ## Fixed vs Variable Cost
-
-
-
-
-
-
-There are also very few up-front costs in the cloud, although some providers allow pre-payment for some of their services. This means an organisation commits to consuming an agreed number of resources which they pay for regardless of whether they use them or not, generally at a discounted rate. This is still counted as operational expenditure. 
-
-Fixed vs variable cost 
 
 - In-house IT infrastructures and services are set for a period of time to meet the IT strategy requirements, organisations know their fixed costs for things like running the data center, buying hardware and software, and ongoing systems maintenance. Then there are things like periodic technology refreshes, license upgrades and support fees. These costs are generally visible and predictable.
 - Cloud services are different. Because of utility pricing and on-demand resources, monthly expenditure is variable and can fluctuate. If the services are for a ‘steady-state’ application – say a customer relationship management system – with a fairly static number of users and consistent usage, the cost can be pretty well anticipated and unlikely to change much. 
+- But, for applications where there’s a high variation in the number and frequency of users, the cost fluctuation will be much greater. However, cloud service providers publish price lists so it’s still possible to predict the likely costs based on forecast demand for the services. 
+- So, accurately costing complex cloud deployments can be difficult, but this has to be weighed against the benefits of on-demand services and cost reductions if service requirements decrease. 
 
-But, for applications where there’s a high variation in the number and frequency of users, the cost fluctuation will be much greater. However, cloud service providers publish price lists so it’s still possible to predict the likely costs based on forecast demand for the services. 
+## Environmental cost
 
-So, accurately costing complex cloud deployments can be difficult, but this has to be weighed against the benefits of on-demand services and cost reductions if service requirements decrease. 
-
-Resource management 
-
-With cloud services, it’s simple to provision and deploy resources. Because of this though, it’s easy to forget about unused resources which can, in effect, lie around doing nothing apart from incurring cost.  
-
-This a real concern for cloud customers. Respondents to RightScale's 2019 State of the Cloud survey identified ‘Controlling and understanding costs’ as one of their highest priorities and estimated that, on average, their bill was 30% higher than it needed to be.  
-
-So, the cloud is about having strong policies and processes in place to govern who can create resources, when they can create them and who needs to authorise their provision. Systems also need to be implemented to ensure that unutilised and underutilised resources are managed and ‘turned off’ when they’re not needed. 
-
-Environmental cost 
-
-This is related to the economies of scale of cloud services and, although it doesn’t directly financially benefit the organisation, it provides an overall environmental benefit because of the way the cloud services are structured. 
-
-Cloud services operate through a common infrastructure which means that multiple customers are running on the same IT infrastructure. If Customer A needs more resources at certain times, Customer B needs them at different times and Customer C has different requirements again, their combined requirements can be aggregated – along with all the other customers – so the overall provision can be ‘flattened’.  
-
-This means that the power consumption requirements are significantly lower than if those hundreds of thousands of customers were running their own data centers.
+- Cloud services operate through a common infrastructure which means that multiple customers are running on the same IT infrastructure. If Customer A needs more resources at certain times, Customer B needs them at different times and Customer C has different requirements again, their combined requirements can be aggregated – along with all the other customers – so the overall provision can be ‘flattened’. 
+- This means that the power consumption requirements are significantly lower than if those hundreds of thousands of customers were running their own data centers.
 
 # Security and Legal Implications
 
@@ -471,7 +458,7 @@ This means that the power consumption requirements are significantly lower than 
 
 ## Compliance controls
 
-![alt text](image-18.png)
+![alt text](./Images/literacy/image-18.png)
 
 - Under Security of the Cloud, the provider manages infrastructure security, physical access controls, and compliance with global regulations.
 - With cloud services, the provider is accountable for meeting some of these legal requirements, specifically the elements geared toward physical access to the infrastructure. Cloud providers must adhere to many worldwide compliance regulations – here are a few of the major ones:
@@ -485,11 +472,11 @@ This means that the power consumption requirements are significantly lower than 
 
 - Cloud infrastructure typically runs on **shared environments (multi-tenancy)** to reduce cost, but **highly sensitive data workloads can use dedicated hosts** for greater isolation at a higher cost. Providers implement strong multi-layered security controls at the host and hypervisor levels to prevent cross-tenant risks.
 
-![alt text](image-19.png)
+![alt text](./Images/literacy/image-19.png)
 
 ## Data integrity and durability
 
-![alt text](image-20.png)
+![alt text](./Images/literacy/image-20.png)
 
 - Cloud providers offer a number of features to maintain the security and integrity of the data they process. These include:
 
@@ -560,4 +547,147 @@ This means that the power consumption requirements are significantly lower than 
     - Rarely direct financial penalties
 - Important: Usually, you must claim the credit — it’s not always automatic.
 - Contracts and Service Level Agreements (SLAs) play a critical role in cloud security and reliability. SLAs define guarantees around availability, performance, capacity, and issue resolution timelines.
-- If the customer organisation doesn’t think the SLAs support their contractual agreements, they might need to architect their systems to be more fault tolerant and be supported by new SLAs. However, this is likely to cost more for the additional resources, so it’s a case of balancing infrastructure and service requirements with security and continuity requirements. 
+- If the customer organisation doesn’t think the SLAs support their contractual agreements, they might need to architect their systems to be more fault tolerant and be supported by new SLAs. However, this is likely to cost more for the additional resources, so it’s a case of balancing infrastructure and service requirements with security and continuity requirements.
+
+# Application Mindset & Practices
+
+- Traditionally, in a physical data center, companies first build the network, buy hardware like servers and storage devices, and then install applications on top of that hardware. Because everything depends on physical machines, IT teams think in terms of “this server” or “that hardware.” If something breaks, the faulty server must be removed, checked, repaired, and then put back into use. Hardware is treated as something long-term and permanent.
+- In the cloud, things work very differently. Networks, servers, and other resources are not physical machines you can touch — **they are created using scripts (code)**. This is often called **Infrastructure as Code**. That means the entire setup — networks, virtual machines, storage — can be written in a file and recreated anytime. Instead of thinking of a server as a permanent machine, we think of it as software that can be created or deleted whenever needed.
+- If something fails in the cloud, you usually don’t repair it like traditional hardware. Instead, you simply delete (terminate) the faulty resource and run the script again to create a fresh one. It’s faster, cleaner, and more automated.
+- For many IT professionals, this requires a big mindset shift — from maintaining and repairing physical hardware to automatically creating and recreating resources using code.
+
+## Planning for failure
+
+![alt text](./Images/literacy/image-21.png)
+
+- Planning for failure in the cloud means accepting one important truth: *`failures will happen`*. Cloud providers run millions of servers for hundreds of thousands of customers. At that massive scale, hardware failures, network issues, or software **problems are unavoidable**. Even if your system doesn’t fail often, good cloud design assumes that something, somewhere, will eventually break. So instead of trying to prevent all failures, we as a consumer must design system that continues working even when parts fail. This is called **service resilience**. It means avoiding a single point of failure — a situation where one broken component brings down the entire system. For example, instead of running your website on one powerful server, you run it on two or more smaller servers. The cost per hour may be similar, but if one server crashes, the other keeps the application running. Your service may slow down slightly, but it won’t completely stop.
+- Some cloud services handle this automatically. For example, cloud storage services usually store multiple copies of your data in different data centers at the same time. That way, even if one data center fails, your data is still safe. But for other systems, like **application servers or databases, you as a consumer may need to design this redundancy yourself using the cloud provider’s tools**.
+
+![alt text](./Images/literacy/image-22.png)
+
+- One important tool is a **load balancer**. A load balancer acts like a traffic controller in front of your servers. When users visit your website, the load balancer distributes their requests across multiple servers so that no single server gets overloaded. If one server stops working, the load balancer automatically sends traffic only to the healthy servers. And when you add a new server, it immediately starts receiving traffic without manual intervention.
+
+
+## Loosely Coupled
+
+![alt text](./Images/literacy/image-23.png)
+
+- To make failover easier, cloud systems are designed to be **loosely coupled**. This means different parts of the system don’t depend too tightly on each other. For example, instead of one server needing to know the exact network address of another server, they communicate through named services or service discovery systems. That way, if a server fails and a new one is created, the system continues working without needing manual reconfiguration. This flexibility is a key advantage of cloud design.
+
+
+## Version Upgrade
+
+
+- Cloud providers usually offer modern and up-to-date versions of operating systems and software. While this is generally beneficial, it can create challenges for organizations that still depend on older versions of applications or databases. 
+- Moving from an outdated system to a newer version may require code changes, testing, and adjustments. So before migrating to the cloud, companies must confirm that their required software versions are supported. Sometimes upgrading is simple, but sometimes hidden compatibility issues make it more complex than expected.
+
+
+>[!IMPORTANT]
+> - As a cloud consumer, when you are architecting your cloud design, you must adopt a different mindset compared to traditional data centers.
+> - Cloud design requires a mindset shift: instead of preventing failure at all costs, we assume failure will happen and build systems that automatically recover and continue running.
+
+
+# Migrating to The Cloud
+
+![alt text](./Images/literacy/image-24.png)
+
+- A **Cloud Centre of Excellence (CCoE)** is basically a small expert team inside an organisation that helps everyone move to the cloud properly. Moving to the cloud is not just about changing technology — it’s about changing how people work. Cloud environments move fast, use automation, and often follow **Agile and DevOps practices**, which means teams must collaborate more, work faster, and be comfortable with continuous change. For many organisations, this mindset shift is actually harder than the technical migration itself. The Cloud Centre of Excellence exists to guide this change.
+- This team is usually made up of people from different departments — IT, security, finance, operations, and sometimes even business teams. Their job is to **define the cloud strategy, set governance rules, create best practices, and guide other teams on how to migrate and operate in the cloud**. They decide things like how resources should be created, what security policies must be followed, how costs should be controlled, and which cloud technologies should be used. Organisations that create this team usually succeed more in their cloud journey because they have a clear direction instead of letting every team do things differently.
+- For example, imagine a company in Mumbai that wants to move its systems from an in-house data center to the cloud. Without a Cloud Centre of Excellence, one team might use one cloud service, another team might configure security differently, and costs might grow out of control. But if a Cloud Centre of Excellence is guiding them, it will define standard templates, security rules, naming conventions, and cost monitoring practices so that everyone follows the same structure.
+- When migrating to the cloud, organisations usually start small. They might begin with a simple project like moving a static company website to understand how cloud deployment works. Before starting, employees must be trained. Many migrations fail not because the technology is bad, but because users don’t understand how to use it. **`Training both IT teams, end users (internal business users) or Support team is critical`**.
+- These are:
+    - HR team using payroll software
+    - Sales team using CRM
+    - Finance team using accounting tools
+    - Developers using internal platforms
+    - Support staff using ticketing systems
+- These people may not be technical, but they use business applications daily. When systems move to the cloud, their login methods, interfaces, workflows, or security processes may change — so they need training.
+- External customers (like customers/client users of your website or app) are generally not referred to as “end users” in migration discussions — unless the migration changes how they interact with your product (like a new UI or authentication system).
+
+## 6 R's
+
+![alt text](./Images/literacy/image-25.png)
+
+- There are different ways to migrate applications, often described as the **6 R's**.
+
+### 1️⃣ Re-host (“Lift and Shift”)
+
+- What it means: Move the application to the cloud without changing its architecture. You basically copy your existing server setup into cloud virtual machines.
+- When to use it:
+    - You-need to migrate quickly.
+    - You don’t have time to redesign.
+    - You want to exit a data center fast.
+    - The application works fine as it is.
+- Example: A company runs a payroll system on Windows Server in their data center. They move that same system to cloud virtual machines without changing anything.
+- Benefit: Fast and simple.
+- Limitation: Doesn’t fully use cloud advantages.
+
+### 2️⃣ Re-platform (“Lift and Reshape”)
+
+- What it means: Move the application to the cloud but make small improvements. You don’t rewrite the app, but you optimize certain parts.
+- When to use it:
+    - The current version isn’t supported in cloud.
+    - You want small performance or cost improvements.
+    - You want moderate effort but better results than lift-and-shift.
+- Example: Instead of running your database on a self-managed VM, you move it to a managed cloud database service.
+- Benefit: Better performance and reduced maintenance.
+- Limitation: Some changes required.
+
+### 3️⃣ Repurchase (“Drop and Shop”)
+
+- What it means: Replace your existing application with a SaaS solution.
+- When to use it:
+    - Your application is outdated.
+    - A better SaaS product already exists.
+    - You don’t want to manage infrastructure anymore.
+    - Maintenance cost is high (Total cost of owning and managing the application yourself)
+- Example: Replacing an in-house CRM system with Microsoft Dynamics 365 or Salesforce.
+- Benefit: No maintenance, modern features.
+- Limitation: Data migration and user training required.
+
+### 4️⃣ Refactor (“Re-architect” or “Code and Load”)
+
+- What it means: Rewrite or redesign the application to fully use cloud-native features. This is the most cloud-optimized approach.
+- When to use it:
+    - The application is business-critical.
+    - You want scalability, automation, and microservices.
+    - You want maximum long-term benefit.
+- Example: Breaking a large monolithic application into microservices and deploying them using containers and managed services.
+- Benefit: Best scalability and cost efficiency.
+- Limitation: Time-consuming and expensive initially.
+
+### 5️⃣ Retain (“Keep and Weep”)
+
+- What it means: Keep the application as it is (don’t move it).
+- When to use it:
+    - It depends on special hardware.
+    - It handles extremely sensitive data.
+    - It will be retired soon anyway.
+    - Migration cost is too high.
+- Example: A legacy manufacturing control system that runs on proprietary hardware.
+- Benefit: No migration effort.
+- Limitation: Still managing old infrastructure.
+
+### 6️⃣ Retire (“Drop and Stop”)
+
+- What it means: Shut down the application completely.
+- When to use it:
+    - Nobody uses it anymore.
+    - A duplicate system exists.
+    - It no longer adds business value.
+- Example: An old reporting tool that was replaced years ago but still running.
+- Benefit: Saves cost immediately.
+
+
+
+
+
+- After migration, the journey doesn’t stop. The cloud constantly evolves — new features, services, and pricing models are introduced regularly. Teams must stay updated. Even though hardware maintenance is handled by the cloud provider, organisations still need to manage operating systems, security, backups, monitoring, and user access depending on whether they use IaaS, PaaS, or SaaS. The advantage is that many tasks can now be automated. For example, if a server behaves abnormally, a monitoring system can automatically remove and replace it.
+
+
+![alt text](./Images/literacy/image-26.png)
+
+## Optimisation
+
+- Finally, optimisation becomes important. Just because something runs in the cloud doesn’t mean it’s efficient. Over time, organisations may replace virtual machines with managed services, automate repetitive tasks, or reduce unused resources to save costs. The Cloud Centre of Excellence continues to guide these improvements, and over time its role becomes more like an internal consultant helping teams use the cloud better.
+- In simple terms, a Cloud Centre of Excellence is the guiding brain of a company’s cloud journey — helping with strategy, migration, training, governance, and continuous improvement — while ensuring people, not just technology, adapt successfully to the cloud.
