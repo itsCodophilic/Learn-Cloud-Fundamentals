@@ -391,3 +391,173 @@ Imagine opening a restaurant:
 
 - Virtual machines are simply programs, so they can be easily copied and restored. ‘Snapshots’ enable multiple, identical copies of one virtual machine to be created so, if something happens to the system, the copy can be restored to its original state.
 - The optimisation of resources through virtualization means that cloud providers can offer an efficient and safe environment, and user organisations should expect to share those benefits through a flexible and cost-effective service.
+
+# Business Implications
+
+## CapEx vs OpEx
+
+![alt text](image-17.png)
+
+- **CapEx (Capital Expenditure)** involves large upfront investments in physical IT infrastructure, while **OpEx (Operating Expenditure)** represents recurring, pay-as-you-go costs for cloud services. 
+- In CapEx, when a company runs its own data center, it must buy servers, buy storage, buy networking equipment, buy software licenses etc. These are big upfront purchases.
+- 💡 Example: A company buys servers for $500,000. That money is spent all at once. The servers are treated as company assets and lose value over time (depreciation).
+- So:
+    - Big upfront cost
+    - Long-term commitment
+    - Hard to change quickly
+- OpEx is like paying for usage like a utility bill. With cloud you don’t buy servers, you rent computing power, you pay monthly based on usage.
+- 💡 Example: Instead of buying a server, you pay $2,000 per month to use cloud servers.
+- So:
+    - No big upfront investment
+    - No hardware ownership
+    - No depreciation
+- Just monthly operating expense
+- It’s like:
+    - Buying a car → CapEx 🚗
+    - Using Uber → OpEx 🚕
+- With cloud services there are no assets to purchase so there’s nothing that depreciates over time. And, because the model allows cloud resources to be scaled up or down to meet demand, it can be a very cost-effective way of managing IT services. 
+
+
+| **Context**            | **CapEx**    | **OpEx**       |
+|------------------------|--------------|----------------|
+| **The upfront cost** | Significant  | None           |
+| **Ongoing cost**      |  Low         | Based on usage |
+| **Tax Deduction**      | Over-time    | Same year      |
+| **Early Termination**  | No           | Anytime        |
+| **Maintenance**        | Significant  | Low            |
+| **Value over time**    | Lowers       |  No change     |
+
+
+
+## Fixed vs Variable Cost
+
+
+
+
+
+
+There are also very few up-front costs in the cloud, although some providers allow pre-payment for some of their services. This means an organisation commits to consuming an agreed number of resources which they pay for regardless of whether they use them or not, generally at a discounted rate. This is still counted as operational expenditure. 
+
+Fixed vs variable cost 
+
+- In-house IT infrastructures and services are set for a period of time to meet the IT strategy requirements, organisations know their fixed costs for things like running the data center, buying hardware and software, and ongoing systems maintenance. Then there are things like periodic technology refreshes, license upgrades and support fees. These costs are generally visible and predictable.
+- Cloud services are different. Because of utility pricing and on-demand resources, monthly expenditure is variable and can fluctuate. If the services are for a ‘steady-state’ application – say a customer relationship management system – with a fairly static number of users and consistent usage, the cost can be pretty well anticipated and unlikely to change much. 
+
+But, for applications where there’s a high variation in the number and frequency of users, the cost fluctuation will be much greater. However, cloud service providers publish price lists so it’s still possible to predict the likely costs based on forecast demand for the services. 
+
+So, accurately costing complex cloud deployments can be difficult, but this has to be weighed against the benefits of on-demand services and cost reductions if service requirements decrease. 
+
+Resource management 
+
+With cloud services, it’s simple to provision and deploy resources. Because of this though, it’s easy to forget about unused resources which can, in effect, lie around doing nothing apart from incurring cost.  
+
+This a real concern for cloud customers. Respondents to RightScale's 2019 State of the Cloud survey identified ‘Controlling and understanding costs’ as one of their highest priorities and estimated that, on average, their bill was 30% higher than it needed to be.  
+
+So, the cloud is about having strong policies and processes in place to govern who can create resources, when they can create them and who needs to authorise their provision. Systems also need to be implemented to ensure that unutilised and underutilised resources are managed and ‘turned off’ when they’re not needed. 
+
+Environmental cost 
+
+This is related to the economies of scale of cloud services and, although it doesn’t directly financially benefit the organisation, it provides an overall environmental benefit because of the way the cloud services are structured. 
+
+Cloud services operate through a common infrastructure which means that multiple customers are running on the same IT infrastructure. If Customer A needs more resources at certain times, Customer B needs them at different times and Customer C has different requirements again, their combined requirements can be aggregated – along with all the other customers – so the overall provision can be ‘flattened’.  
+
+This means that the power consumption requirements are significantly lower than if those hundreds of thousands of customers were running their own data centers.
+
+# Security and Legal Implications
+
+- **`Cloud security is a shared responsibility between the service provider who’s accountable for the ‘security of the cloud’ and the customer organisation who’s accountable for the ‘security in the cloud’`**.
+- Before organisations move all or part of their IT services into the cloud, they must be confident in the security arrangements. These can be affected by the infrastructure they’re using, how their systems are accessed and how their data is handled. So, the cloud provider must provide assurance and certifications to prove how they enforce security, and the customer organisation then needs to implement appropriate security measures and processes.
+- The provider secures the underlying infrastructure such as physical data centers, networking, hardware, and hypervisors, while the customer must secure their applications, data, user access, and configurations. Before moving to the cloud, organisations must ensure that proper security certifications, compliance controls, and legal protections are in place.
+
+## Compliance controls
+
+![alt text](image-18.png)
+
+- Under Security of the Cloud, the provider manages infrastructure security, physical access controls, and compliance with global regulations.
+- With cloud services, the provider is accountable for meeting some of these legal requirements, specifically the elements geared toward physical access to the infrastructure. Cloud providers must adhere to many worldwide compliance regulations – here are a few of the major ones:
+    - Health Insurance Portability and Accountability Act (HIPAA) : Protecting electronic health information in the US
+    - General Data Protection Regulations (GDPR) : Data protection law in the EU and UK focusing on data privacy and protection by design
+    - Payment Card Industry Data Security Standard (PCI-DSS) : Security standards for handling payment card information
+    - International Standards organisation (ISO) : Information security management standards
+- While the cloud provider ensures compliance related to physical infrastructure and system-level controls, customer organisations still remain responsible for how they use and manage data within the system.  
+
+## IT infrastructure
+
+- Cloud infrastructure typically runs on **shared environments (multi-tenancy)** to reduce cost, but **highly sensitive data workloads can use dedicated hosts** for greater isolation at a higher cost. Providers implement strong multi-layered security controls at the host and hypervisor levels to prevent cross-tenant risks.
+
+![alt text](image-19.png)
+
+## Data integrity and durability
+
+![alt text](image-20.png)
+
+- Cloud providers offer a number of features to maintain the security and integrity of the data they process. These include:
+
+1. **HTTPS encryption** - Enforcing https-based communication so data is encrypted in transit. This means the cloud provider will provide data transfer appliances with multiple security features for the organisation to fill with data which is then encrypted and securely transported back to the cloud provider.
+
+2. **TLS** - Configuring communications between the virtual machines running in the cloud to use Transport Layer Security, or TLS; a widely adopted security protocol designed to facilitate privacy and data security over the Internet.
+
+3. **SSE** - Using server-side encryption, or SSE, to support the encryption of data when it’s being stored. They use what are known as ‘key hierarchies’ to do this so that, even if somebody was to gain access to the physical media storing an organisation’s data, they won’t be able to get to the master key that’s required to decrypt it because it’s stored somewhere else.
+
+4. **Access Controls** - Fine-grained access controls which require authorisation for users to access data. organisations can control who can access data stored in their storage services.
+
+5. **Object Versions** - Object versioning which enables versioning on storage services. This means a malicious or accidental overwrite or deletion can be ‘rolled back’ to the previous version. When an organisation uploads something to the cloud, multiple copies of the resource are placed into multiple storage servers in multiple physical locations. This ensures a high degree of durability, and recovering data if something fails with the storage systems is fairly easy. Most cloud providers state 99.999999999% - known as ‘eleven nines’ – durability of their storage service which means if you stored ten million objects for ten thousand years, they might lose one of them! 
+
+## Identity and Access Management (IAM)
+
+- Under Security in the Cloud, the customer organisation remains responsible for managing Identity and Access Management (IAM), enforcing the **principle of least privilege**, securing applications, configuring systems properly, and ensuring regulatory compliance. Cloud providers may integrate with existing authentication systems, but organisations must still define who can access what resources and under what conditions.
+- This means limiting access rights for users to the bare minimum they need to perform their work. 
+
+## Contracts and SLAs (Service Level Agreements)
+
+
+- A Service Level Agreement (SLA) in cloud computing is a formal, **legally binding contract between a cloud service provider (CSP) and a customer that defines the expected level of service**, including reliability (e.g., 99.9% uptime), performance metrics, security, and specific penalties or credits if these standards are not met
+- An SLA (Service Level Agreement) is a formal promise written in a contract between a service provider and a customer. It clearly defines:
+    - What service will be provided
+    - How well it will perform
+    - How available it will be
+    - What happens if the service fails
+- Think of it like a **guarantee card for a service**.
+- Example: If your provider says, “We guarantee 99% network uptime per month,” that promise is part of an SLA. If they fail, you may get compensation or service credits.
+- In cloud computing, an SLA is the agreement between you (customer) and the cloud provider (like Amazon Web Services, Microsoft Azure, or Google Cloud).
+- Since your applications and data run on their infrastructure, they promise certain performance standards.
+
+1️⃣ Availability (Uptime Guarantee)
+
+- This is the most important part. Cloud providers usually promise something like:
+    - 99.9% uptime
+    - 99.99% uptime
+    - Sometimes even higher
+- For example:
+    - 99.9% uptime means about 43 minutes of downtime per month
+    - 99.99% uptime means about 4 minutes of downtime per month
+- If the service goes down more than promised, you may receive service credits.
+
+2️⃣ Performance & Capacity
+
+- The SLA may define:
+    - Response times
+    - Compute performance levels
+    - Storage durability guarantees
+- For example:
+    - Storage durability may be promised at 99.999999999% (11 nines).
+    - API requests will respond within a specific time.
+
+3️⃣ Issue Resolution
+
+- SLA also defines:
+    - How quickly support will respond
+    - Priority levels for incidents
+    - Time to fix critical issues
+- Example:
+    - Critical issue → response within 1 hour
+    - Normal issue → response within 24 hours
+
+4️⃣ Compensation Terms
+
+- If the provider fails to meet SLA terms:
+    - You may receive service credits
+    - Rarely direct financial penalties
+- Important: Usually, you must claim the credit — it’s not always automatic.
+- Contracts and Service Level Agreements (SLAs) play a critical role in cloud security and reliability. SLAs define guarantees around availability, performance, capacity, and issue resolution timelines.
+- If the customer organisation doesn’t think the SLAs support their contractual agreements, they might need to architect their systems to be more fault tolerant and be supported by new SLAs. However, this is likely to cost more for the additional resources, so it’s a case of balancing infrastructure and service requirements with security and continuity requirements. 
