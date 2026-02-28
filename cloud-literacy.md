@@ -281,6 +281,78 @@ Imagine opening a restaurant:
 - The option to scale resources is important at times when the IT infrastructure takes a heavier amount of traffic than at other times. Think of things like online services that help people to fill in their tax returns which hit a bottleneck towards the end of April, or a new online game is being released and the demand is not accurately known.
 - In a classic data center environment, the organisation would need to provision their storage database and network capacity to reflect this additional traffic. There will be additional costs for this extra infrastructure and it might only be used for a couple of months of the year – or not at all. The cloud can be used to traffic burst by scaling resources up when they’re needed and reducing them again when they’re not.
 
+
+##### Types of Scalability
+
+
+![alt text](./Images/literacy/image-27.png)
+
+###### Vertical Scaling (Scaling Up/Down)
+
+- Vertical scaling means **increasing or decreasing the power of a single server**. Involves adding more power to an existing server, such as upgrading its CPU, RAM, or storage capacity.
+- It is ideal for legacy systems or monolithic applications that cannot easily distribute their load.
+- Example: You are running a database on a virtual machine with 4 GB RAM & 2 CPUs. Your application becomes slow because more users are accessing it. You upgrade it to 16 GB RAM & 8 CPUs
+- When is it useful?
+    - It is **best for simple, low-latency needs, legacy applications, or databases that struggle with distribution**.
+    - For applications that can’t easily run on multiple servers
+    - When simplicity is preferred
+- Limitation:
+    - **Hardware Maximums**: Every server has a physical limit; eventually, no larger machine can be purchased.
+    - **Single Point of Failure (SPOF)**: If the server fails, the entire application goes down.
+    - **Downtime During Upgrades**: Replacing or upgrading hardware often requires restarting or shutting down the machine.
+    - **High Costs at Scale**: Upgrading to top-tier hardware becomes extremely expensive compared to adding smaller, cheaper nodes.
+
+###### Horizontal Scaling (Scaling Out/In)
+
+- Horizontal scaling **means adding or removing more servers instead of increasing the power of one server**. 
+- Entails adding more instances or nodes (like virtual machines) to your infrastructure to distribute the workload across multiple machines. This approach is better for high availability and fault tolerance.
+- Example: Your website runs on 1 server. Traffic increases, so you add more servers. Now traffic is distributed across all servers using a load balancer.
+- When it is Useful?
+    - **Rapidly Increasing Traffic**: Ideal for web applications and microservices needing to handle fluctuating or high-volume concurrent user traffic.
+    - **High Availability & Fault Tolerance**: If one node fails, others continue running, ensuring minimal downtime and improved resilience.
+    - **Long-Term Growth**: Unlike vertical scaling (which has hardware limits), horizontal scaling allows adding more capacity indefinitely.
+    - **Distributed Processing**: Suitable for big data, analytics, and content delivery networks (CDNs) that can process tasks in parallel.
+    - **Cost Efficiency (Long-Term)**: While initial setup can be higher, it often proves cheaper over time by allowing the use of commodity hardware rather than expensive, specialized servers. 
+- Limitations:
+    - **Architectural Complexity**: Requires designing applications to be stateless or distributed, making it much harder to implement than simply upgrading one machine.
+    - **Data Consistency Issues**: Distributing data across multiple nodes can create challenges with ensuring data is synchronized (consistency), often requiring complex databases.
+    - **Increased Management Overhead**: Managing, monitoring, and automating a large fleet of servers requires specialized tools and skilled staff.
+    - **Network Latency**: Communication between distributed nodes can introduce latency that does not exist in single-machine setups.
+    - **Not Suitable for All Applications**: Applications needing heavy, single-threaded computing or tight coupling of components might not benefit. 
+
+###### Diagonal/Hybrid Scaling
+
+- Diagonal scaling is a **combination of vertical and horizontal scaling**. You first **increase the power of a server (vertical), and when that limit is reached, you start adding more servers (horizontal)**.
+- A combination of both vertical and horizontal scaling. A system might first scale vertically to maximize existing server capacity and then scale horizontally to handle further growth.
+- Example: You upgrade your server from 4GB to 16GB RAM (vertical). Later, traffic grows further, so you add 3 more servers (horizontal).
+- When it is Useful?
+    - **Handling Variable Workloads**: It is ideal for businesses facing unpredictable traffic spikes, allowing them to scale up for immediate performance needs and out for long-term growth.
+    - **Optimizing Costs and Performance**: By scaling vertically first (cheaper initially) and adding horizontal nodes when hardware limits are reached, it balances cost-efficiency with high performance.
+    - **Database Management**: It is effective for stateful applications (e.g., SQL databases) that require high performance on individual nodes but also need to handle increased read/write demand through replicas.
+    - **Avoiding Bottlenecks**: It prevents systems from being throttled by enhancing individual server power while expanding infrastructure. 
+- Limitations: 
+    - **Increased Complexity**: Implementing both vertical and horizontal scaling requires more sophisticated management compared to choosing just one method.
+    - **Management Overhead**: It requires monitoring both the capacity of individual servers and the coordination of the overall cluster, which can lead to higher operational overhead.
+    - **Risk of Inefficiency**: If not properly configured, it can lead to wasted resources (too much capacity) or inadequate performance (too little capacity).
+    - **Initial Cost**: While cost-effective in the long run, it can have higher initial setup costs compared to simple, one-dimensional scaling
+
+>[!TIP]
+> - Simple Decision Guide
+> - If your app:
+>   - Is simple and small → Vertical scaling is fine.
+>   - Needs high availability → Use Horizontal scaling.
+>   - Is growing rapidly → Use Diagonal scaling.
+>   - Must survive server failure → Horizontal scaling is necessary.
+>   - Cannot be distributed easily → Vertical scaling.
+
+
+>[!NOTE]
+> - In modern cloud architecture Horizontal scaling is preferred because it supports:
+>   - High availability
+>   - Fault tolerance
+>   - Elasticity
+>   - Microservices architecture
+
 #### Economies of scale
 
 - Cloud providers benefit from economies of scale because of the huge number of resources they buy to provide services to the customers they support. Because these services run on a common infrastructure, shared between all the customers, each organisation benefits from lower resource costs.
@@ -289,6 +361,17 @@ Imagine opening a restaurant:
 
 - This relates to the amount of choice cloud services provide an organisation to fully customise their IT environment, and then lets them use only the resources they require.
 - Cloud elasticity is the ability of a cloud system to **automatically and dynamically provision or deprovision computing resources**—such as CPU, memory, and storage—in real-time to match fluctuating workload demands. It enables organizations to scale resources up/down or in/out, ensuring optimal performance without over-provisioning, which lowers costs.
+- Elasticity is actually a special form of scalability that happens automatically and dynamically.
+
+
+>[!IMPORTANT]
+> ##### Difference Between Scalability and Elasticity
+> - Scalability means the system can handle more load by increasing its capacity.
+> - Elasticity means the system can automatically increase and decrease capacity depending on demand
+> - Scalability is the ability of a system to handle increased workload by adding more resources, either manually or automatically, and it mainly focuses on growth. Elasticity, on the other hand, is the ability of a cloud system to automatically adjust resources up and down based on real-time demand. In simple terms, scalability is about capacity expansion, while elasticity is about dynamic adjustment. 
+> - Scalability ensures your system can grow; elasticity ensures it grows and shrinks efficiently without wasting resources.
+> - If you manually upgrade a VM’s RAM → That’s scalability.
+> - If the system automatically adds or removes servers when traffic changes → That’s elasticity.
 
 #### Availability and opportunity 
 
@@ -691,3 +774,112 @@ Imagine opening a restaurant:
 
 - Finally, optimisation becomes important. Just because something runs in the cloud doesn’t mean it’s efficient. Over time, organisations may replace virtual machines with managed services, automate repetitive tasks, or reduce unused resources to save costs. The Cloud Centre of Excellence continues to guide these improvements, and over time its role becomes more like an internal consultant helping teams use the cloud better.
 - In simple terms, a Cloud Centre of Excellence is the guiding brain of a company’s cloud journey — helping with strategy, migration, training, governance, and continuous improvement — while ensuring people, not just technology, adapt successfully to the cloud.
+
+
+# Technical Q&A Notes
+
+
+1. **Which areas are the sole responsibility of the customer for SaaS, PaaS, and IaaS services?**
+    
+    A. Devices (Mobile and PCs) ✅
+
+    B. Information and data ✅
+
+    C. Physical network
+
+    D. Physical security of the data center
+    
+
+    - *Explanation:*
+        - *The correct answer is Devices (Mobile and PCs) and Information and data.*
+        - *The customer's responsibility is the security of the client device that is being used by customers (mobile device, PC, etc.) to access cloud applications.*
+        - *Data protection is the responsibility of the customer, although the customer can use some cloud services to help protect its data.*
+        - *In the SaaS, PaaS, and IaaS service models, the physical network is the responsibility of the CSP.*
+        - *The pysical security of the data center is handled by the CSP in the IaaS model in the PaaS and SaaS models.*
+
+
+
+
+
+2. **One can argue that security on the public cloud is superior to on-premise security. Why is this?**
+
+    A. Public cloud vendor services must meet international security requirements. ✅
+
+    B. Public cloud vendor services must meet multiple business industries' security and governance requirements. ✅
+
+    C. Public cloud vendor datacenters use superior security technology.
+
+    D. Public cloud vendor services are entirely separate from the public internet.
+
+
+    - *Explanation:*
+        - *Security is one of the most discussed topics within cloud computing, and many enterprises still have concerns over how secure it is.*
+        - *However, public cloud vendors such as AWS and Microsoft Azure are considered to be more secure than your own data center. This is down to the fact that they have to adhere to global compliance programs across multiple industries and by applying the shared responsibility model.*
+
+
+
+
+3. **Public cloud vendors have a common definition of what aspects of security are the vendor's responsibility and what aspects of security are the end user's responsibility. This is referred to as the Shared Responsibility Model. Under the Shared Responsibility Model, which of the following would be the end user's responsibility?**
+
+
+    A. Access to the physical datacenter
+
+    B. Operation and administration of the hardware hosting virtual resources
+
+    C. Availability of a cloud storage service
+
+    D. Identity and access management to a cloud database ✅
+
+
+    - *Explanation:*
+        - *The correct answer is Identity and access management to a cloud database.*
+        - *The vendor will operate to an exceptionally high standard of security for the underlying infrastructure of the cloud, but it's up to you as the end-user to then architect security in the cloud by using the tools, services, and applications available.*
+
+
+
+4. **Which service model allows you to configure and customize everything in your environment except the hardware?**
+
+    A. Software as a Service (SaaS)
+
+    B. Infrastructure as a Service (IaaS) ✅
+
+    C. Platform as a Service (PaaS)
+
+    D. ‘Anything’ as a Service (XaaS)
+    
+    
+    - *Explanation:*
+        - *The correct answer is Infrastructure as a Service (IaaS).*
+        - *IaaS provides the greatest level of customization as you can configure the environment from the ground up, starting from which operating system to install and up. Other service models have fixed components which you are unable to change or manage.*
+
+
+5. **Which cloud service model balances customization and user control so developers may focus on the application layer while the service administers the virtual architecture, such as the operating system?**
+
+    A. Infrastructure-as-a-Service
+
+    B. Platform-as-a-Service ✅
+
+    C. Software-as-a-Service
+
+    D. Traditional on-premise
+
+
+    - *Explanation:*
+        - *The correct answer is Platform-as-a-Service.*
+        - *A PaaS cloud service model allows access to the framework above the operating system level, which is ideal for developers who want to focus on their application design while the service itself manages a large portion of the day-to-day service administration.*
+
+
+6. **What is a key benefit of Virtualization?**
+
+    A. Increased operational cost
+
+    B. Quicker remote connectivity
+
+    C. Reduced network latency
+
+    D. Reduced capital expenditure ✅
+
+    
+    - *Explanation:*
+        - *The correct answer is Reduced capital expenditure.*
+        - *As Virtualization allows for multiple VMs to be installed on the same physical host, it maximizes the optimization potential and reduces the requirement to purchase additional servers, resulting in a reduced capital expenditure*
