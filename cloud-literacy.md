@@ -923,3 +923,62 @@ Imagine opening a restaurant:
     - *Explanation:*
         - *The correct answer is Reduced capital expenditure.*
         - *As Virtualization allows for multiple VMs to be installed on the same physical host, it maximizes the optimization potential and reduces the requirement to purchase additional servers, resulting in a reduced capital expenditure*
+
+
+7. **Migration to the cloud presents numerous potential benefits, but it will not solve all of a business's challenges. Which of the following `is not` an immediate benefit provided by the cloud?**
+
+    A. Utility-based metering
+
+    B. Improved application performance ✅
+
+    C. On-demand resourcing
+
+    D. Economy of scale
+
+    - *Explanation:*
+        - *Economy of scale, on-demand resourcing, and utility-based metering are each available in the public cloud, but improved application performance is not guaranteed by hosting one's services in the cloud. Optimization, experimentation, and innovation may be easier to implement, depending on your application's requirements, but this still requires a dedicated team to review and redesign an application to gain the true benefits of the cloud.*
+
+
+8. **What is the difference between a dedicated host and a dedicated instance?**
+
+
+    A. A dedicated host gives you far greater control and visibility of sockets and cores, a dedicated instance does not. ✅
+    
+    B. A dedicated instance gives you far greater control and visibility of sockets and cores, a dedicated host does not.
+
+    C. A dedicated host has more processing power than a dedicated instance.
+    
+    D. A dedicated instance has more processing power than a dedicated host.
+
+    - *Explanation:*
+        - *Normal Cloud instances is:*
+            - *You launch a virtual machine (VM).*
+            - *That VM runs on a physical server in the cloud provider’s data center.*
+            - *That same physical server is shared with other customers.*
+            - *Everything is isolated virtually.*
+        - *You don’t know which physical machine you're using.*
+        - *A Dedicated Instance means:*
+            - *Your virtual machine runs on hardware that is not shared with other customers.*
+            - *The physical server is used only for your account.*
+            - *But you don’t control which exact physical server it is.*
+        - *A Dedicated Host means:*
+            - *You get an entire physical server dedicated to you.*
+            - *You can see the host.*
+            - *You can control how many instances run on it.*
+        - *`Dedicated Instance → Dedicated VM hardware, but you don’t see the host.`*
+        - *`Dedicated Host → Entire physical server is yours, and you control it.`*
+
+
+9. **Before deciding to move your business to the Cloud, what key question should be answered by the business?**
+
+    A. What is the business favorite Cloud vendor?
+    
+    B. What servers does the business want to migrate?
+
+    C. Should the business select a Public, Private, Hybrid or Community Cloud?
+
+    D. What is the business trying to achieve and what are its objectives? ✅
+
+    - *Explanation:*
+        - *Once the business understands its key objectives, then an end goal is realized and this is the first step in understanding if the Cloud can provide you with the correct business strategy.*
+        - *If you don’t have an answer to that question, then now would be a good time to consider them; without knowing what your goals and priorities for your business are, it will be difficult to understand if Cloud adoption would be a viable direction to go.*
