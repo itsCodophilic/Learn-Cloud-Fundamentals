@@ -274,6 +274,8 @@ Imagine opening a restaurant:
 #### Utility Pricing
 
 - **You only pay for what you use which is known as utility pricing**. Utility pricing in the cloud is, you only pay for resources when you use them because they’re on-demand and utility-priced.
+- Typically within a data center, your infrastructure is up and running 24 X 7 X 365 days, always running, always on, but not always utilized. The power on coiling costs alone for this infrastructure can be phenomenal over the year, especially when you're talking hundreds or even thousands of servers. Wouldn't it be great if you could just go along and switch off the servers when you're not using them? Well, in essence you could, but it rarely occurs, and even if you did, you'd still be paying for the footprint space that those servers took up.
+- The cloud offers you the ability to shut down any instance that isn't in use. At that point you instantly stop paying for that resource. This could even be scripted. So for example, at 6:00 p.m. every day, all test and development servers are switched off, and then turned back on again at 8:00 a.m. the next morning.
 
 #### Scalability
 
@@ -530,8 +532,46 @@ Imagine opening a restaurant:
 
 ## Environmental cost
 
-- Cloud services operate through a common infrastructure which means that multiple customers are running on the same IT infrastructure. If Customer A needs more resources at certain times, Customer B needs them at different times and Customer C has different requirements again, their combined requirements can be aggregated – along with all the other customers – so the overall provision can be ‘flattened’. 
+- Cloud services operate through a common infrastructure which means that multiple customers are running on the same IT infrastructure. If Customer A needs more resources at certain times, Customer B needs them at different times and Customer C has different requirements again, their combined requirements can be aggregated – along with all the other customers – so the overall provision can be ‘flattened’.
 - This means that the power consumption requirements are significantly lower than if those hundreds of thousands of customers were running their own data centers.
+
+
+![alt text](./Images/literacy/image-28.png)
+
+- Your carbon footprint is the total amount of pollution (carbon dioxide) your activities create. For a company, this includes:
+    - Electricity usage
+    - Fuel usage
+    - Data center power
+    - Manufacturing processes
+- Carbon footprint reduction means reducing the amount of pollution your company creates.
+- A green business is a company that tries to:
+    - Reduce pollution
+    - Save energy
+    - Use resources responsibly
+    - Protect the environment
+- Governments around the world are asking companies to reduce pollution and become more environmentally friendly. Running big data centers (rooms full of servers) uses:
+    - A lot of electricity
+    - A lot of cooling systems
+    - A lot of power
+- All of this creates carbon emissions, which contribute to climate change. Now, instead of running your own data center, if you move your applications to the Cloud, the cloud provider can run them more efficiently.
+- Cloud companies:
+    - Use better technology
+    - Use energy more efficiently
+    - Invest in modern cooling systems
+    - Sometimes use outside air to cool servers (less electricity needed)
+- So by moving to the cloud, your company:
+    - Uses less energy overall
+    - Reduces pollution
+    - Becomes more environmentally friendly
+- And being environmentally responsible improves your company’s reputation.
+
+## Reduce Risk
+
+![alt text](./Images/literacy/image-29.png)
+
+- Utilizing the Cloud allows you to reduce many of your business risks. One of your biggest risks is that of data durability, the loss or corruption of your own, or even your customer's, data. It provides high availability, resiliency and this will help with reducing that risk. However, you could even take this one step further, and utilize multiple Cloud vendors. Perhaps both AWS and Azure to hold customer data as an even greater risk mitigation strategy.
+- Product risks often come when moving from test and development to production. Much of this is down to the fact that it's not always easy to replicate your test environment to reflect that of your production when on-premise. Largely, this is normally down to not having enough available resources. As a result, tests are often not completed to full requirements of a new product or service.
+- With Cloud deployments, there are services that allow you to have the ability to copy your architecture exactly as it is in production, which can then deploy for testing where it's built exactly the same. You can have this purely for the period only required for testing, and then remove the infrastructure so you stop paying for it. So now, you're able to fully test, from end to end, as if it were in a production environment for a small cost, mitigating a lot of the existing risks you would have had otherwise, resulting in a more reliable release for your customers.
 
 # Security and Legal Implications
 
